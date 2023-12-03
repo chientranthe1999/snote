@@ -1,0 +1,36 @@
+:root {
+    --primary: #0a85d1;
+}
+
+.footer-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    bottom: -8px;
+    left: 0;
+    background-color: var(--primary);
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+.social-icon {
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    color: var(--primary);
+}
+
+.social-icon + .social-icon{
+    margin-left: 8px;
+}

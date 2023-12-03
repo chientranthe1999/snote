@@ -1,0 +1,51 @@
+@use "../../styles/abstracts/colors" as *;
+@use "../../styles/abstracts/layouts" as *;
+
+.right_open {
+  width: 330px;
+}
+
+.right_closed {
+  width: 0;
+}
+
+.right {
+  background-color: gray;
+  transition: width 0.3s ease-in-out;
+  z-index: 2;
+
+  .sidebar {
+    color: #80807c;
+    width: 400px;
+    height: 100vh;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 45px;
+      background-color: $background-primary;
+
+      .icon {
+        font-size: 2em;
+        padding: 0 10px;
+        cursor: pointer;
+      }
+    }
+
+    .content {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.dark {
+  .sidebar {
+    .header {
+      background-color: $dark-background-primary;
+    }
+  }
+}

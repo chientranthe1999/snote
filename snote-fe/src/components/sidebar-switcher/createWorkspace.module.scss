@@ -1,0 +1,28 @@
+@use "../../styles/abstracts/colors" as *;
+@use "../../styles/abstracts/modalAnimation" as *;
+
+.create_workspace_background {
+  @include modal-animation();
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  cursor: auto;
+
+  .create_workspace {
+    @include modal-animation();
+    width: 450px;
+    height: 550px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+.dark {
+  background-color: rgb(0, 0, 0, 0.5);
+}
